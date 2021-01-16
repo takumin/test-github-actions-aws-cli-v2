@@ -43,3 +43,5 @@ jobs:
           -----END PGP PUBLIC KEY BLOCK-----
     - name: Check AWS CLI v2 Public Key
       run: cat pgp-public-key.pem
+    - name: Import AWS CLI V2 Public Key
+      run: gpg --import pgp-public-key.pem
