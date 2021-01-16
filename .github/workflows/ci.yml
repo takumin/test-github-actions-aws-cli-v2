@@ -54,6 +54,6 @@ jobs:
     - name: Extract AWS CLI v2
       run: unzip awscliv2.zip
     - name: Install AWS CLI v2
-      run: sudo ./aws/install
+      run: sudo ./aws/install --update
     - name: Check AWS CLI v2
       run: aws --version
