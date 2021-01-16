@@ -13,6 +13,7 @@ jobs:
     - name: Set AWS CLI v2 Public Key
       run: echo "$PGP_PUBLIC_KEY_PEM" > pgp-public-key.pem
       env:
+        # see also: https://docs.aws.amazon.com/en_us/cli/latest/userguide/install-cliv2-linux.html#v2-install-linux-validate
         PGP_PUBLIC_KEY_PEM: |-
           -----BEGIN PGP PUBLIC KEY BLOCK-----
 
