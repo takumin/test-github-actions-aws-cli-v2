@@ -8,6 +8,8 @@ jobs:
     name: AWS CLI
     runs-on: ubuntu-20.04
     steps:
+    - name: Check AWS CLI v2
+      run: aws --version
     - name: Set AWS CLI v2 Public Key
       run: echo "$PGP_PUBLIC_KEY_PEM" > pgp-public-key.pem
       env:
